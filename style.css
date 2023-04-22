@@ -1,0 +1,83 @@
+.very-dark-blue {
+  color: hsl(243, 87%, 12%) !important;
+}
+
+.very-dark-blue-bg {
+  background-color: hsl(243, 87%, 12%) !important;
+}
+
+.desaturated-blue {
+  color: hsl(238, 22%, 44%);
+}
+
+.desaturated-blue-bg {
+  background-color: hsl(238, 22%, 44%);
+}
+
+.light-grayish-blue {
+  background-color: hsl(240, 75%, 98%);
+}
+
+h1,
+h2,
+.btn,
+.navbar-nav .nav-link {
+  font-family: "Raleway", sans-serif !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-brand img {
+  width: 6rem;
+}
+
+.form-control,
+.btn {
+  border-radius: 2px !important;
+}
+
+.form-control::placeholder {
+  color: hsl(0, 0%, 75%) !important;
+}
+
+.review {
+  position: relative;
+}
+.review::before {
+  position: absolute;
+  content: "";
+  background-image: url("images/bg-curve-mobile.svg");
+  background-size: cover;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: -50px;
+}
+.review a {
+  text-underline-offset: 8px;
+}
+.review .review-testimonial .avatar-testimonial {
+  width: 2rem;
+}
+.review .review-testimonial div p {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .h4 {
+    font-size: 1.9rem !important;
+  }
+  .review::before {
+    background-image: url("images/bg-curve-desktop.svg");
+  }
+  .review-testimonial {
+    width: 70%;
+  }
+  .form-2 .btn {
+    width: auto !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

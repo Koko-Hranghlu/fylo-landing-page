@@ -1,0 +1,92 @@
+$heading-font-family: "Raleway", sans-serif;
+// Primary
+.very-dark-blue {
+  color: hsl(243, 87%, 12%) !important;
+}
+
+.very-dark-blue-bg {
+  background-color: hsl(243, 87%, 12%) !important;
+}
+.desaturated-blue {
+  color: hsl(238, 22%, 44%);
+}
+
+.desaturated-blue-bg {
+  background-color: hsl(238, 22%, 44%);
+}
+
+// Accent
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+// neutral
+.light-grayish-blue {
+  background-color: hsl(240, 75%, 98%);
+}
+
+$light-gray: hsl(0, 0%, 75%);
+
+h1,
+h2,
+.btn,
+.navbar-nav .nav-link {
+  font-family: $heading-font-family !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-brand img {
+  width: 6rem;
+}
+
+.form-control,
+.btn {
+  border-radius: 2px !important;
+}
+
+.form-control::placeholder {
+  color: $light-gray !important;
+}
+
+.review {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("images/bg-curve-mobile.svg");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    top: -50px;
+  }
+  a {
+    text-underline-offset: 8px;
+  }
+  .review-testimonial {
+    .avatar-testimonial {
+      width: 2rem;
+    }
+    div p {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .h4 {
+    font-size: 1.9rem !important;
+  }
+
+  .review::before {
+    background-image: url("images/bg-curve-desktop.svg");
+  }
+  .review-testimonial {
+    width: 70%;
+  }
+
+  .form-2 .btn {
+    width: auto !important;
+  }
+}
